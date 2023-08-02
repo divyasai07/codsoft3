@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.calculator {
+  width: 27%;
+  padding: 30px 20px 30px 20px;
+  margin: 30px 0 0 440px;
+  display: grid;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: rgb(108, 108, 153);
+  border-color: black;
+  grid-template-columns: repeat(4, 70px);
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 20px;
+  grid-template-areas: "header header header header";
+}
+h1 {
+  margin: 10px 0 0 540px;
+  font-size: 40px;
+}
+.input {
+  background-color: white;
+  grid-area: header;
+}
+#grid1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#grid18 {
+  grid-column: span 2;
+}
+.input {
+  padding: 40px;
+  text-align: start;
+  background-color: white;
+  color: black;
+  border: 2px solid;
+  font-size: 25px;
+  border-radius: 10px;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  word-wrap: break-word;
+  word-break: break-all;
+  box-shadow: 2px 2px 15px white;
+}
+.button {
+  box-shadow: 2px 2px 15px white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.623);
+  border: 1px solid;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: white;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.button:active {
+  transform: translateY(4px);
+}
